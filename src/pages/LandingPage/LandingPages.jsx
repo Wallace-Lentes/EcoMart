@@ -1,10 +1,10 @@
 import React from 'react'
-import Cadastro from '../cadastro/Cadastro'
+import Header from '../../components/views/LandingPage/Header/Header'
 
 const LandingPages = () => {
   return (
     <div>
-        <Cadastro/>
+        < Header />
     </div>
   )
 }

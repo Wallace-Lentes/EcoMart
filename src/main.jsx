@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import LandingPages from './pages/LandingPage/LandingPages'
+import Rotas from '../Rotas'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <LandingPages/>
+    < Rotas />
   </React.StrictMode>,
 )
