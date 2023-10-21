@@ -1,0 +1,18 @@
+" Guia dos Devs - de Devs para Devs"
+PARA OS COLABORADORES DO PROJETO: 
+ 
+LEMBRETES / DICAS
+- Sempre dar um git pull antes de codar 
+- Sempre fazer commits ao finalizar uma ideia ou ao final do dia de trabalho 
+- Sempre que caso trabalhe na main, verificar se tem dev trabalhando ali tb 
+- Dê preferência ao trabalhar na sua branch 
+- Pull request feitos nas reuniões para verificar erros e andamento do projeto
+- Utilizem chatGPT para explicar erros
+
+PASTAS
+- Pasta common: componentes que são comuns, nessa criem direito na main 
+- Pasta components (que não é common): componentes das páginas de vocês
+
+SAÚDE E AJUDA
+- Sempre peçam ajuda quando precisarem, independente pra quem seja
+- Se estiver pesado, reparta a tarefa e o sentimento com alguém :) 
