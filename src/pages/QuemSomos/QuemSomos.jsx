@@ -23,9 +23,12 @@ Na Ecomart, somos mais do que uma plataforma - somos agentes de mudança, impuls
 
 <p>Avenida Greta Thunberg, 800 - Centro - Curitiba, Paraná   </p>
 
+</main></section></div>
+
 
 
 
 
     ) 
 }
+export default QuemSomos;
