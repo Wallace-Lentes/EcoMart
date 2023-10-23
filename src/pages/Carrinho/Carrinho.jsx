@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Carrinho = () => {
+const Carrinho = (produto, handleAbrirModal) => {
   return (
-    <div>Carrinho</div>
+    <div>
+      <p> </p>
+    </div>
   )
 }
 
