@@ -1,29 +1,45 @@
 import React from 'react'
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Button from "../../../common/Button/Button"
 
 const Header = () => {
-return (
 
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate('/login')
+    }
+return (
+    <StyleHeader>
+    <picture className='logo'>
+        <img src={Logo} alt="" />
+    </picture>
     <div>
         <h1>EcoMart</h1>
         <nav>
         <ul>
             <li>
-                <Link to='/'>Pagina Inicial</Link> 
+                <Link className={'Link'}>Pagina Inicial </Link>
             </li>
             <li>
-                <Link to='/QuemSomos'>Quem Somos</Link>
+                <Link className={'Link'}>Quem Somos</Link>
             </li>
             <li>
-                <Link to='/Contato'>Contato</Link>
+                <Link className={'Link'}>Contato</Link>
             </li>
             <li>
-                <Link to='/Produtos'>Produtos</Link> 
+                <Link className={'Link'}>Produtos </Link>
+            </li>
+            <li>
+                <Link to='/login' className={'Link'}>Entrar</Link>
+            </li>
+            <li>
+            <Button texto='Criar Conta' variant='primary' onClick={handleClick} />
             </li>
         </ul>
         </nav>
-        
     </div>
+    </StyleHeader>
 )
 }
 
