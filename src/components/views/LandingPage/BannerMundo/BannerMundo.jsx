@@ -1,11 +1,10 @@
 import React from 'react'
-import planeta from "../../../../assets/planeta.svg"
+import planeta from "../../../../assets/fotoplaneta.jpg"
 import { StyleContainer } from "../BannerMundo/BannerMundo.style"
 
 const BannerMundo = () => {
     return (
         <StyleContainer>
-            <div className="content">
             <div className="textos">
                 <h2>Bem-vindo a EcoMart </h2>
     
@@ -17,11 +16,9 @@ const BannerMundo = () => {
                 Aqui na Ecomart seu lixo reciclado se tranforma em materia prima para pequenos artesões! Além de acular pontos e trocar por beneficios você ainda ajuda o planeta com o descarte correto dos Materiais.
                 </p>
             </div>
-    
-            <picture>
-                <img src={planeta} alt="" />
+            <picture className={'planeta'}>
+            <img src={planeta} alt="Planeta sendo cuidado por 3 pessoas" />
             </picture>
-            </div>
         </StyleContainer>
     );
 };
