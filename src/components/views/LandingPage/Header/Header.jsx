@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Button from "../../../common/Button/Button"
+import * as S from "../Header/header.style"
 
 const Header = () => {
 
@@ -10,7 +11,7 @@ const Header = () => {
         navigate('/login')
     }
 return (
-    <StyleHeader>
+    <S.StyleHeader className="content">
     <picture className='logo'>
         <img src={Logo} alt="" />
     </picture>
@@ -39,7 +40,7 @@ return (
         </ul>
         </nav>
     </div>
-    </StyleHeader>
+    </S.StyleHeader>
 )
 }
 
