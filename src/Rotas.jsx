@@ -12,6 +12,7 @@ return (
         <GlobalStyle />
         <Routes>
         <Route path="/" component={<LandingPage />} />
+        <Route path="/" component={<PaginaHome />} />
         <Route path="/ Quem Somos" component={<QuemSomos />} />
         <Route path="/ Login" component={<Login />} />
         </Routes>

@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../../components/views/LandingPage/Header/Header'
+import PaginaHome from "../PaginaHome/PaginaHome"
 
 const LandingPages = () => {
   return (
     <div>
-        < Header />
+        <PaginaHome />
     </div>
   )
 }
