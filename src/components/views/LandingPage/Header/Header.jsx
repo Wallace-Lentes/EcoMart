@@ -2,13 +2,14 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Button from "../../../common/Button/Button"
 import * as S from "../Header/header.style"
+import Logo from '../../../../../public/logoMarca-removebg-preview.png'
 
 const Header = () => {
 
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate('/login')
+        navigate('/cadastro')
     }
 return (
     <S.StyleHeader className="content">

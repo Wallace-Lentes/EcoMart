@@ -22,4 +22,18 @@ const StyleButton = styled.button`
     background-color: ${(props) => props.theme.white20};
   }
 `;
+const PrimaryButton = styled(StyleButton)`
+  width: ${props => props.width ? props.width : 'fit-content'};
+   background: ${(props) => props.theme.blue700};
+   border: none; 
+   color: ${(props) => props.theme.white50};
+   :hover{
+    background-color: ${(props) => props.theme.blue500};
+  }
+`
+const SecondaryButton = styled(StyleButton)`
+   background: transparent;
+   border: 1px solid ${(props) => props.theme.blue700}; 
+   color: ${(props) => props.theme.blue700};
+`
 export default Button;

@@ -5,16 +5,17 @@ import { GlobalStyle } from "../src/style/GlobalStyle"
 import LandingPage from "../src/pages/LandingPage/LandingPages"
 import QuemSomos from "../src/pages/QuemSomos/QuemSomos"
 import Login from '../src/pages/login/Login'
+import PaginaHome from './pages/PaginaHome/PaginaHome'
 
 const Rotas = () => {
 return (
     <BrowserRouter>
         <GlobalStyle />
         <Routes>
-        <Route path="/" component={<LandingPage />} />
-        <Route path="/" component={<PaginaHome />} />
-        <Route path="/ Quem Somos" component={<QuemSomos />} />
-        <Route path="/ Login" component={<Login />} />
+        <Route path="/" element={<LandingPage/>} />
+        <Route path="/paginaHome" element={<PaginaHome/>} />
+        <Route path="/quemSomos" element={<QuemSomos/>} />
+        <Route path="/login" element={<Login/>} />
         </Routes>
     </BrowserRouter>
 )
