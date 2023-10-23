@@ -5,11 +5,11 @@ height: 100%;
 color: blue;
 display: flex;
 background-color: #f2f2f2;
+padding: 12px;
 
 .logo {
     width: 150px;
     object-fit: contain;
-
 }
 
 >nav{
@@ -20,7 +20,7 @@ background-color: #f2f2f2;
 display: flex;
 justify-content: space-around;
 align-items: center;
-padding: 12px;
+
 }
 
 .Link{

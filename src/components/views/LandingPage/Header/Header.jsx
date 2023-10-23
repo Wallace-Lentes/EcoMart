@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Button from "../../../common/Button/Button"
 import {StyleHeader} from "../Header/header.style"
-import logo from "/logo.png"
+import logo from "/ecomartmenor.png"
 
 
 const Header = () => {
