@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Button from "../../../common/Button/Button"
-import * as S from "../Header/header.style"
-import Logo from '../../../../../public/logoMarca-removebg-preview.png'
+import {StyleHeader} from "../Header/header.style"
+import logo from "/logo.png"
+
 
 const Header = () => {
 
@@ -12,14 +13,10 @@ const Header = () => {
         navigate('/cadastro')
     }
 return (
-    <S.StyleHeader className="content">
-    <picture className='logo'>
-        <img src={Logo} alt="" />
-    </picture>
-    <div>
-        <h1>EcoMart</h1>
-        <nav>
-        <ul>
+    <StyleHeader>
+        <img className='logo'src={logo} alt="Logo da Empresa EcoMart com uma folha verde em cima da letra 'o'" aria-label='Logomarca'/>
+        <nav >
+        <ul className='ListaLinks'>
             <li>
                 <Link className={'Link'}>Pagina Inicial </Link>
             </li>
@@ -40,8 +37,7 @@ return (
             </li>
         </ul>
         </nav>
-    </div>
-    </S.StyleHeader>
+    </StyleHeader>
 )
 }
 

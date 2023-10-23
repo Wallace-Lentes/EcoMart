@@ -1,30 +1,31 @@
 import styled from "styled-components";
 
 export const StyleHeader = styled.header`
+height: 100%;
+color: blue;
+display: flex;
+background-color: #f2f2f2;
+
+.logo {
+    width: 150px;
+    object-fit: contain;
+
+}
+
+>nav{
     width: 100%;
-    padding: 12px 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-.lista_links {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 24px;
+    height: fit-content;
+}
+.ListaLinks {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 12px;
 }
 
-.link {
-    color: #457b9d;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.link:hover {
-    opacity: 0.7;
+.Link{
+color: black;
+font-size: 22px;
 }
 
 `;
