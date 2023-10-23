@@ -1,5 +1,6 @@
 import React from 'react'
 import planeta from "../../../../assets/planeta.svg"
+import { StyleContainer } from "../BannerMundo/BannerMundo.style"
 
 const BannerMundo = () => {
     return (
