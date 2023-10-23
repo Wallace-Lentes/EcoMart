@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { GlobalStyle } from "./style/GlobalStyle"
+import { GlobalStyle } from "../src/style/GlobalStyle"
 //import { tema } from "./src/style/theme"
 import LandingPage from "../src/pages/LandingPage/LandingPages"
 import QuemSomos from "../src/pages/QuemSomos/QuemSomos"
