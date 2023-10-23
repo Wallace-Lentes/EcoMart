@@ -1,10 +1,10 @@
 import React from 'react'
-import Cadastro from '../cadastro/Cadastro'
+import PaginaHome from "../PaginaHome/PaginaHome"
 
 const LandingPages = () => {
   return (
     <div>
-        <Cadastro/>
+        <PaginaHome />
     </div>
   )
 }
