@@ -32,3 +32,4 @@ Na Ecomart, somos mais do que uma plataforma - somos agentes de mudança, impuls
     ) 
 }
 export default QuemSomos;
+
