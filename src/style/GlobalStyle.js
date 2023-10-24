@@ -14,6 +14,12 @@ html,
   min-height: 100vh;
 }
 
+
+.imgProdutos {
+  width: 300px;
+  height: 300px;
+}
+
 button,
 a {
   cursor: pointer;
