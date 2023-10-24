@@ -59,8 +59,7 @@ const Cadastro = () => {
                 // value={email}
                 onChange={(e) => setEmail(e)}
               />
-            </div>
-            <div>
+              
               <Textfield
                 label="Telefone*"
                 name="telefone"
@@ -70,6 +69,8 @@ const Cadastro = () => {
                 // value={telefone}
                 onChange={(e) => setTelefone(e)}
               />
+            </div>
+            <div>
 
               <Textfield
                 label="CEP*"
@@ -100,12 +101,32 @@ const Cadastro = () => {
                 // value={numero}
                 onChange={(e) => setNumero(e)}
               />
+
+              <Textfield
+                label="Senha*"
+                name="senha"
+                placeholder="Ex: ******"
+                type="password"
+                required
+                // value={senha}
+                onChange={(e) => setSenha(e)}
+              />
+
+              <Textfield
+                label="Confirma Senha*"
+                name="confirmaSenha"
+                placeholder="Ex: ******"
+                type="password"
+                required
+                // value={confirmasenha}
+                onChange={(e) => setConfirmaSenha(e)}
+              />
             </div>
           </div>
 
           <div className="fimForm">
             <p>
-              Já tem conta tem conta? 
+              Já tem conta tem conta?
               <Link to="/login" className="destaque" onClick={handleClick}>
                 Faça login
               </Link>
