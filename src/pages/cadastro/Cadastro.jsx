@@ -3,15 +3,15 @@ import React from 'react'
 const Cadastro = () => {
   return (
     <div>
-    <section>
-      <Logo fontSize={64} />
+    {/* <section>
+      {/* <Logo fontSize={64} /> 
 
-      <picture>
+      {/* <picture>
         <img
           src={cadastro}
           alt="Vetor homem branco preenchendo um fomulario de satisfação"
         />
-      </picture>
+      </picture> 
     </section>
 
     <form action="">
@@ -81,7 +81,7 @@ const Cadastro = () => {
         texto="Cadastrar"
         onClick={handleCadastro}
       />
-    </form>
+    </form> */}
   </div>
   )
 }
