@@ -6,7 +6,8 @@ import LandingPage from "../src/pages/LandingPage/LandingPages"
 import QuemSomos from "../src/pages/QuemSomos/QuemSomos"
 import Login from '../src/pages/login/Login'
 import PaginaHome from './pages/PaginaHome/PaginaHome'
-import Produtos from './pages/Produtos/Produtos'
+import Produtos from '../src/pages/Produtos/Produtos'
+import Contato from '../src/pages/Contato'
 
 const Rotas = () => {
 return (
@@ -17,7 +18,8 @@ return (
         <Route path="/paginaHome" element={<PaginaHome/>} />
         <Route path="/quemSomos" element={<QuemSomos/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/paginaProdutos" element={<Produtos/>} />
+        <Route path="/produtos" element={<Produtos/>} />
+        <Route path="/contato" element={<Contato/>} />
         </Routes>
     </BrowserRouter>
 )
