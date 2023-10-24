@@ -7,6 +7,8 @@ display: flex;
 background-color: #f2f2f2;
 padding: 12px;
 
+
+
 .logo {
     width: 150px;
     object-fit: contain;
