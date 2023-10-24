@@ -1,7 +1,11 @@
 import React from "react";
+import Header from "../../components/views/LandingPage/Header/Header";
+import Footer from "../../components/views/LandingPage/Footer/Footer";
 
 const Contato = () => {
-  return (
+    return (
+      <>
+      <Header></Header>
     <div>
       <h2> Entre em contato </h2>
 
@@ -22,12 +26,11 @@ const Contato = () => {
         {" "}
         Estamos abertos para receber suas opiniões. Basta preencher o formulário
         abaixo:{" "}
-      </p>
-      
-    
-            
+      </p>            
       
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 

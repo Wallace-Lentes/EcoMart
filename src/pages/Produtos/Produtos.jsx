@@ -1,12 +1,16 @@
 import React from 'react'
 import  Card from '../../components/Card/Card'
 import { useState } from 'react'
+import Footer from '../../components/views/LandingPage/Footer/Footer'
+import Header from '../../components/views/LandingPage/Header/Header'
 
 const Produtos = () => {
   
   const [addProdutos,setAddProdutos]=useState()
 
   return (
+    <>
+    <Header></Header>
     <div className='produtos'> 
     <Card
     id={1} 
@@ -49,6 +53,8 @@ const Produtos = () => {
     />
 
     </div>
+    <Footer></Footer>
+    </>
   )
 }
 
