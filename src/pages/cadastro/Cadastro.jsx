@@ -1,7 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { StyleCadastro } from "./cadastro.style";
+import Textfield from "../../components/common/Textfield/Textfield";
+import Button from "../../components/common/Button/Button";
+import Header from "../../components/views/LandingPage/Header/Header";
+import Footer from "../../components/views/LandingPage/Footer/Footer";
 
 const Cadastro = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/login");
+  };
   return (
+
     <div>
     {/* <section>
       {/* <Logo fontSize={64} /> 
@@ -14,66 +26,105 @@ const Cadastro = () => {
       </picture> 
     </section>
 
-    <form action="">
-      <h2>Cadastro</h2>
-      <div>
-        <Textfield
-          nome="nome"
-          label="Nome"
-          type="text"
-          required
-          placeholder="Maria"
-          value={nome}
-          onChange={(e) => setNome(e)}
+    <>
+      <Header></Header>
+      <StyleCadastro>
+        <form className="formCadastro">
+          <h2>Cadastro</h2>
+          <div className="formulario">
+            <div>
+              <Textfield
+                label="Nome*"
+                name="nome"
+                placeholder="Ex: João"
+                type="text"
+                required
+                // value={nome}
+                onChange={(e) => setNome(e)}
+              />
 
-        />
-        <Textfield
-          nome="sobrenome"
-          label="Sobrenome"
-          type="text"
-          required
-          placeholder="Silva"
-          value={sobrenome}
-          onChange={(e) => setSobrenome(e)}
+              <Textfield
+                label="Sobre nome*"
+                name="sobreNome"
+                placeholder="Ex: Silva"
+                type="text"
+                required
+                // value={sobrenome}
+                onChange={(e) => setSobrenome(e)}
+              />
 
-        />
 
-      </div>
-      <Textfield
-        nome="email"
-        label="E-mail"
-        type="email"
-        required
-        placeholder="mariasilva@gmail.com"
-        value={email}
-        onChange={(e) => setEmail(e)}
+              <Textfield
+                label="CPF*"
+                name="cpf"
+                placeholder="Ex: 123.456.789-00"
+                type="number"
+                required
+                // value={cpf}
+                onChange={(e) => setCPF(e)}
+              />
 
-      />
-      <Textfield
-        nome="senha"
-        label="Senha"
-        type="password"
-        required
-        placeholder="●●●●●●●"
-        value={senha}
-        onChange={(e) => setSenha(e)}
-      />
-      <Textfield
-        nome="confirmaSenha"
-        label="Confirmação de Senha"
-        type="password"
-        required
-        placeholder="●●●●●●●"
-        value={confirmaSenha}
-        onChange={(e) => setConfirmaSenha(e)}
-      />
+              <Textfield
+                label="Email*"
+                name="email"
+                placeholder="Ex: Joao.silva@email.com"
+                type="email"
+                required
+                // value={email}
+                onChange={(e) => setEmail(e)}
+              />
+            </div>
+            <div>
+              <Textfield
+                label="Telefone*"
+                name="telefone"
+                placeholder="Ex: 43 99988-8252"
+                type="telefone"
+                required
+                // value={telefone}
+                onChange={(e) => setTelefone(e)}
+              />
 
-      <p>
-        Ja tem conta tem conta?
-        <Link to="/login" className="destaque">
-          Faça login
-        </Link>
-      </p>
+              <Textfield
+                label="CEP*"
+                name="cep"
+                placeholder="Ex: 89.444.555"
+                type="number"
+                required
+                // value={cep}
+                onChange={(e) => setCEP(e)}
+              />
+
+              <Textfield
+                label="Rua*"
+                name="rua"
+                placeholder="Ex: Av. Paraná"
+                type="text"
+                required
+                // value={rua}
+                onChange={(e) => setRua(e)}
+              />
+
+              <Textfield
+                label="Numero*"
+                name="numero"
+                placeholder="Ex: 1111"
+                type="number"
+                required
+                // value={numero}
+                onChange={(e) => setNumero(e)}
+              />
+            </div>
+          </div>
+
+          <div className="fimForm">
+            <p>
+              Já tem conta tem conta? 
+              <Link to="/login" className="destaque" onClick={handleClick}>
+                Faça login
+              </Link>
+            </p>
+          </div>
 
       <Button
         width="100%"
@@ -86,4 +137,20 @@ const Cadastro = () => {
   )
 }
 
-export default Cadastro
+          <div className="fimForm">
+            <Button
+              width="100%"
+              variant="secondary"
+              texto="Cadastrar"
+              // onClick={handleCadastro}
+            />
+          </div>
+        </form>
+      </StyleCadastro>
+      <Footer></Footer>
+    </>
+  );
+};
+
+
+export default Cadastro;
