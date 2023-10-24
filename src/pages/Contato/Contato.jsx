@@ -16,12 +16,11 @@ const Contato = () => {
 
       <h2> Redes Sociais </h2>
       <ul>
-        <li><Facebook/>
+        <li><Facebookalt="Ícone do Facebook"  />
           <a href="https://www.facebook.com/pagina-da-ecomart"> Facebook </a>
-          {/* //Falta inserir os ícones do Facebook e Instagram */}
         </li>
 
-        <li><Instagram/>
+        <li><Instagramalt="Ícone do Instagram"  />
           <a href="https://www.instagram.com/pagina-da-ecomart"> Instagram </a>
         </li>
       </ul>
