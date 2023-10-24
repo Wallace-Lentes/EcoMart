@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../components/views/LandingPage/Header/Header";
 import Footer from "../../components/views/LandingPage/Footer/Footer";
-import Input from "../../components/common/Input";
-import Textfield from "../../components/common/Textfield";
-import Button from "../../components/common/Button";
-import { Facebook, Instagram } from "phosphor-icons";
+// import Input from "../../components/common/Input";
+// import Textfield from "../../components/common/Textfield";
+// import Button from "../../components/common/Button";
+import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
 
 
 const Contato = () => {
@@ -16,11 +16,11 @@ const Contato = () => {
 
       <h2> Redes Sociais </h2>
       <ul>
-        <li><Facebookalt="Ícone do Facebook"  />
+        <li><FacebookLogo alt="Ícone do Facebook"  />
           <a href="https://www.facebook.com/pagina-da-ecomart"> Facebook </a>
         </li>
 
-        <li><Instagramalt="Ícone do Instagram"  />
+        <li><InstagramLogo alt="Ícone do Instagram"  />
           <a href="https://www.instagram.com/pagina-da-ecomart"> Instagram </a>
         </li>
       </ul>
