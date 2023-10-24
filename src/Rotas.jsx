@@ -6,6 +6,7 @@ import LandingPage from "../src/pages/LandingPage/LandingPages"
 import QuemSomos from "../src/pages/QuemSomos/QuemSomos"
 import Login from '../src/pages/login/Login'
 import PaginaHome from './pages/PaginaHome/PaginaHome'
+import Cadastro from './pages/cadastro/Cadastro'
 
 const Rotas = () => {
 return (
@@ -16,6 +17,7 @@ return (
         <Route path="/paginaHome" element={<PaginaHome/>} />
         <Route path="/quemSomos" element={<QuemSomos/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/cadastro" element={<Cadastro/>} />
         </Routes>
     </BrowserRouter>
 )
