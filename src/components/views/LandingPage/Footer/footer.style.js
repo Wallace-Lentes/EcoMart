@@ -5,7 +5,7 @@ background-color: #f2f2f2;
 height: 20vh;
 color: blue;
 display: flex;
-margin-top: 50px;
+/* margin-top: 50px; */
 
 .rodape {
     display: flex;
