@@ -18,16 +18,16 @@ return (
         <nav >
         <ul className='ListaLinks'>
             <li>
-                <Link className={'Link'}>Pagina Inicial </Link>
+                <Link to = '/paginaHome' className={'Link'}>Pagina Inicial </Link>
             </li>
             <li>
-                <Link className={'Link'}>Quem Somos</Link>
+                <Link to = '/quemSomos' className={'Link'}>Quem Somos</Link>
             </li>
             <li>
-                <Link className={'Link'}>Contato</Link>
+                <Link to = '/contato' className={'Link'}>Contato</Link>
             </li>
             <li>
-                <Link className={'Link'}>Produtos </Link>
+                <Link to='/produtos' className={'Link'}>Produtos </Link>
             </li>
             <li>
                 <Link to='/login' className={'Link'}>Entrar</Link>
