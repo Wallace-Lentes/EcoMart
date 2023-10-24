@@ -1,6 +1,11 @@
 import React from "react";
 import Header from "../../components/views/LandingPage/Header/Header";
 import Footer from "../../components/views/LandingPage/Footer/Footer";
+import Input from "../../components/common/Input";
+import Textfield from "../../components/common/Textfield";
+import Button from "../../components/common/Button";
+import { Facebook, Instagram } from "phosphor-icons";
+
 
 const Contato = () => {
     return (
