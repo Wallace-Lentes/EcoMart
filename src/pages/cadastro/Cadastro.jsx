@@ -13,19 +13,6 @@ const Cadastro = () => {
     navigate("/login");
   };
   return (
-
-    <div>
-    {/* <section>
-      {/* <Logo fontSize={64} /> 
-
-      {/* <picture>
-        <img
-          src={cadastro}
-          alt="Vetor homem branco preenchendo um fomulario de satisfação"
-        />
-      </picture> 
-    </section>
-
     <>
       <Header></Header>
       <StyleCadastro>
@@ -52,7 +39,6 @@ const Cadastro = () => {
                 // value={sobrenome}
                 onChange={(e) => setSobrenome(e)}
               />
-
 
               <Textfield
                 label="CPF*"
@@ -147,17 +133,6 @@ const Cadastro = () => {
             </p>
           </div>
 
-      <Button
-        width="100%"
-        variant='primary'
-        texto="Cadastrar"
-        onClick={handleCadastro}
-      />
-    </form> */}
-  </div>
-  )
-}
-
           <div className="fimForm">
             <Button
               width="100%"
@@ -172,6 +147,5 @@ const Cadastro = () => {
     </>
   );
 };
-
 
 export default Cadastro;
