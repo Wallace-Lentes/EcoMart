@@ -8,11 +8,7 @@ const Card = ({id, titulo, img, valor, loja, descricao}) => {
   const [notificacaoAberta, setNotificacaoAberta] = useState(false);
 
   const handleClick = () => {
-    setNotificacaoAberta(true);
-    setTimeout(() => {
-      setNotificacaoAberta(false);
-    }, 2000);
-  };
+    setNotificacaoAberta(true)};
 
 
   return (
@@ -23,7 +19,7 @@ const Card = ({id, titulo, img, valor, loja, descricao}) => {
       <p> {loja}</p>
       <p>Valor: ${valor}</p>
       <Button texto='Adicionar ao carrinho' variant='primary' onClick={handleClick} />
-      
+      {notificacaoAberta && <Notificacao taAberto={notificacaoAberta} fecharNotificacao={()=>setNotificacaoAberta(false)}/>}
     </StyledCard>
   )
 }
@@ -36,10 +32,11 @@ const StyledCard = styled.div`
   place-items: center;
   margin-top: 24px;
   margin-left: 20%;
+  justify-content: space-between;
   gap: 16px;
   max-width: 400px;
   padding: 40px;
   background: #95d195;
   border-radius: 16px;
-  box-shadow:  9px 6px  #013B0E;
+  box-shadow:  6px 6px 5px #013B0E80;
 `
