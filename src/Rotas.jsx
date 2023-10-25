@@ -17,6 +17,9 @@ return (
         <Route path="/quemSomos" element={<QuemSomos/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/produtos" element={<Produtos/>} />
+        <Route path="/contato" element={<Contato/>} />
+        <Route path="/cadastro" element={<Cadastro/>} />
+
         </Routes>
     </BrowserRouter>
 )
