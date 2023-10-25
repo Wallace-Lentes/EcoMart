@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyleFooter = styled.footer`
 background-color: #95d195;
 height: 20vh;
-color: blue;
 display: flex;
 /* margin-top: 50px; */
 
@@ -40,6 +39,7 @@ display: flex;
 .icones svg {
     cursor: pointer;
     margin-right: 10px;
+    color: #013B0E;
 }
 .icones svg:hover {
     transform: scale(1.2);
