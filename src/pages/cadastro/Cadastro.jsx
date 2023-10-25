@@ -133,17 +133,14 @@ const Cadastro = () => {
             </p>
           </div>
 
-
+<div>
       <Button
         width="100%"
         variant='primary'
         texto="Cadastrar"
         onClick={handleCadastro}
       />
-    </form> 
   </div>
-  )
-}
 
           <div className="fimForm">
             <Button
@@ -155,8 +152,8 @@ const Cadastro = () => {
           </div>
         </form>
       </StyleCadastro>
-      <Footer></Footer>*/}
-    </div>
+      <Footer></Footer>*/
+      </>
   );
 };
 
