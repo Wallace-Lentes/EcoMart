@@ -6,13 +6,15 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   font-family:  'Roboto', sans-serif;
-  color:#013B0E ;
+  
 }
 
-html,
+html,body,
 :root {
   width: 100%;
   min-height: 100vh;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 

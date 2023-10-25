@@ -28,3 +28,5 @@ export const StyleCadastro = styled.main`
    
 }
 `;
+
+
