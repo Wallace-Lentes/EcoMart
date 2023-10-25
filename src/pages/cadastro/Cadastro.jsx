@@ -126,25 +126,29 @@ const Cadastro = () => {
 
           <div className="fimForm">
             <p>
-              Já tem conta tem conta?
+              Já tem conta?
               <Link to="/login" className="destaque" onClick={handleClick}>
                 Faça login
               </Link>
             </p>
           </div>
 
-
+<div>
       <Button
         width="100%"
         variant='primary'
         texto="Cadastrar"
         onClick={handleCadastro}
       />
+
     </form> 
   </StyleCadastro>
   </>
   )
 }
+
+  </div>
+
 
           {/* <div className="fimForm">
             <Button
@@ -156,8 +160,13 @@ const Cadastro = () => {
           </div>
         </form>
       </StyleCadastro>
+
       <Footer></Footer>*/}
     {/* </div>
+
+      <Footer></Footer>*/
+      </>
+
   );
 }; */}
 
