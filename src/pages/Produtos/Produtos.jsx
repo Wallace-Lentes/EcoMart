@@ -67,12 +67,12 @@ const Produtos = () => {
 };
 
 
-
 const StyledProdutos = styled.div`
   max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #F5F6EE;
-`
+  margin-bottom: 20px;
+  `
 
 export default Produtos;
