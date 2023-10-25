@@ -17,13 +17,13 @@ return (
         <GlobalStyle />
         <Routes>
         <Route path="/" element={<LandingPage/>} />
-        <Route path="/paginaHome" element={<PaginaHome/>} />
-        <Route path="/quemSomos" element={<QuemSomos/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/produtos" element={<Produtos/>} />
-        <Route path="/contato" element={<Contato/>} />
-        <Route path="/cadastro" element={<Cadastro/>} />
-        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/PaginaHome" element={<PaginaHome/>} />
+        <Route path="/QuemSomos" element={<QuemSomos/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Produtos" element={<Produtos/>} />
+        <Route path="/Contato" element={<Contato/>} />
+        <Route path="/Cadastro" element={<Cadastro/>} />
+        <Route path="/Dashboard" element={<Dashboard/>} />
 
         </Routes>
     </BrowserRouter>
