@@ -1,26 +1,21 @@
 import React from "react";
+import {StyleQuemSomos} from "../QuemSomos/quemsomos.style"
 import Footer from "../../components/views/LandingPage/Footer/Footer";
 import Header from "../../components/views/LandingPage/Header/Header";
+import reciclagem from "/reciclagem.svg"
 
 const QuemSomos = () => {
   return (
     <>
       <Header></Header>
-      <div>
-        <section>
-          <main>
-            <h2> Quem Somos </h2>
-
-            <h2> Ecomart: Transformando Resíduos em Sustentabilidade! </h2>
+      <StyleQuemSomos>
+            <h2> Conheça mais da nossa Historia </h2>
+            <h3> Ecomart, Transformando Resíduos em Sustentabilidade! </h3>
+              <div>
             <p>
-              {" "}
               Na Ecomart, acreditamos que a sustentabilidade é um círculo
-              virtuoso. Nossa plataforma online inovadora oferece a todos a
+              virtuoso, nossa plataforma online inovadora oferece a todos a
               oportunidade de fazer parte dessa mudança.
-            </p>
-
-            <p>
-              {" "}
               No centro de nossa visão está a ideia simples: troque seu lixo
               reciclável por produtos sustentáveis. Nós capacitamos pessoas a
               transformar resíduos em recursos, promovendo a responsabilidade
@@ -28,28 +23,17 @@ const QuemSomos = () => {
               vida, gerando um impacto positivo que se estende a comunidades e
               ao planeta. Junte-se a nós no caminho para um mundo mais verde,
               onde cada ação conta.
-            </p>
-
-            <p>
               Na Ecomart, somos mais do que uma plataforma - somos agentes de
               mudança, impulsionando uma revolução ecológica. Faça parte desse
               círculo virtuoso e descubra como pequenas ações individuais podem
               ter um grande impacto global.
-            </p>
-
-            <p>
-              {" "}
               Junte-se à Ecomart hoje e ajude-nos a criar um futuro mais
               sustentável para todos! 💚
-            </p>
-
-            <h2> Onde estamos </h2>
-
-            <p>Avenida Greta Thunberg, 800 - Centro - Curitiba, Paraná </p>
-          </main>
-        </section>
+            </p> 
+            <img className='foto'src={reciclagem} alt="" />
       </div>
-
+      
+        </StyleQuemSomos>
       <Footer></Footer>
     </>
   );
