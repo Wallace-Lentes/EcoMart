@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const StyleLogin = styled.main` 
+
+img{
+    width: 500px;
+    height: 500px;
+    
+}
     
     section, .div-principal, form {
         display: flex;
@@ -26,7 +32,7 @@ export const StyleLogin = styled.main`
 
     .div-principal {
         border-radius: 12px;
-        background-color: #dcb2ed;
+        background-color: #777CDB;
         width: 60%;
         padding: 50px;
         margin: 5% 0 10% 0%;
