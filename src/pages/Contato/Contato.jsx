@@ -1,7 +1,17 @@
-import React from 'react'
+import React from "react";
+import Header from "../../components/views/LandingPage/Header/Header";
+import Footer from "../../components/views/LandingPage/Footer/Footer";
+// import Input from "../../components/common/Input";
+// import Textfield from "../../components/common/Textfield";
+// import Button from "../../components/common/Button";
+import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
+
 
 const Contato = () => {
     return (
+
+      <>
+      <Header></Header>
         <main>
             <section>
                 <div>
@@ -32,9 +42,8 @@ const Contato = () => {
 
     </section>
 </main>
-
+<Footer></Footer>
+    </>
 )}
 
 export default Contato;
-
-

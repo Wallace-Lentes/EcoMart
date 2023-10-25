@@ -2,12 +2,6 @@ import styled from "styled-components";
 
 export const StyleLogin = styled.main` 
 
-img{
-    width: 500px;
-    height: 500px;
-    
-}
-    
     section, .div-principal, form {
         display: flex;
     }
@@ -32,7 +26,7 @@ img{
 
     .div-principal {
         border-radius: 12px;
-        background-color: #777CDB;
+        background-color: #95d195;
         width: 60%;
         padding: 50px;
         margin: 5% 0 10% 0%;
@@ -57,6 +51,9 @@ img{
         font-family: 'Roboto',sans-serif;
         color: #263238;
     }
-
+img{
+    width: 500px;
+    height: 500px;
+}
 
 `

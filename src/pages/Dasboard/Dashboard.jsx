@@ -1,8 +1,12 @@
 import React from 'react'
+import Layout from '../../components/shared/Layout/Layout'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+      <Layout/>
+    </div>
+    
   )
 }
 

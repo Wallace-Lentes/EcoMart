@@ -1,3 +1,4 @@
+
 import React from "react";
 import Card from "../../components/Card/Card";
 import { useState } from "react";
@@ -18,6 +19,7 @@ const Produtos = () => {
 
   return (
     <>
+
     
       <Header />
     <StyledProdutos className="produtos">
@@ -76,3 +78,4 @@ const StyledProdutos = styled.div`
   `
 
 export default Produtos;
+
