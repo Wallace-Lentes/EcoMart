@@ -1,37 +1,33 @@
-import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 // import { TransacoesContext } from '../../../core/contexto/useTransacoes'
 // import Logo from '../../common/Logo/Logo'
 import { StylesLayout } from './Layout.Styles'
-import Footer from '../../views/LandingPage/Footer/Footer'
-
-const Layout = ({ children }) => {
-
 //   const { nome } = useContext(TransacoesContext)
+
+const Layout = () => {
   return (
     <StylesLayout>
-      <aside className='barra-lateral'>
-        {/* <Logo /> */}
+      <img src="" alt="" />
+      <nav className='barra-lateral'>
         <ul>
           <li>
-            <Link>EcoMart</Link>
+            <h2>EcoMart</h2>
           </li>
           <li>
-            <Link>Produtos</Link>
+            <Link to='/Produtos'>Produtos</Link>
           </li>
           <li>
             <Link>Contato</Link>
           </li>
         </ul>
-      </aside>
+      </nav>
       <div>
-
         <p>Olá, seja bem vindo</p>
         <section className='corpo-pagina'>
             <h1>Você possui 2392 pontos</h1>
             <p>Troque seus pontos por benefícios</p>
         </section>
-        <Footer/>
+
       </div>
     </StylesLayout>
   )
