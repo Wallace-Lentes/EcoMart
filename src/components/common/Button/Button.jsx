@@ -11,7 +11,7 @@ const Button = ({ texto, variant, width, onClick }) => {
 const StyleButton = styled.button`
   width:auto;
   border-radius: 8px;
-  box-shadow: 5px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 6px 4px 0px #013B0E80;
   padding: 12px 48px;
   align-items: center;
   font-weight: 650;
