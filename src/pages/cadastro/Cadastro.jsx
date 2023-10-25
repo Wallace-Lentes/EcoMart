@@ -9,9 +9,9 @@ import Footer from "../../components/views/LandingPage/Footer/Footer";
 const Cadastro = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/login");
-  };
+  // const handleClick = () => {
+  //   navigate("/login");
+  // };
   return (
     <>
       <Header></Header>
@@ -141,11 +141,12 @@ const Cadastro = () => {
         onClick={handleCadastro}
       />
     </form> 
-  </div>
+  </StyleCadastro>
+  </>
   )
 }
 
-          <div className="fimForm">
+          {/* <div className="fimForm">
             <Button
               width="100%"
               variant="secondary"
@@ -156,8 +157,8 @@ const Cadastro = () => {
         </form>
       </StyleCadastro>
       <Footer></Footer>*/}
-    </div>
+    {/* </div>
   );
-};
+}; */}
 
 export default Cadastro;
