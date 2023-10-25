@@ -14,7 +14,7 @@ const Footer = () => {
         <section className="loc-icon">
           <MapPin
             className="map"
-            color={'blue'}
+            color={'#013B0E'}
             size={20}
             weight="fill"
           />
@@ -29,21 +29,21 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedinLogo color={'blue'} size={40} weight="fill" />
+            <LinkedinLogo color={'#013B0E'} size={40} weight="fill" />
           </a>
           <a
             href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <InstagramLogo color={'blue'} size={40} />
+            <InstagramLogo color={'#013B0E'} size={40} />
           </a>
           <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FacebookLogo color={'blue'} size={40} />
+            <FacebookLogo color={'#013B0E'} size={40} />
           </a>
         </section>
         <section className="contato">

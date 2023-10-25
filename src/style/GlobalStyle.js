@@ -6,12 +6,19 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   font-family:  'Roboto', sans-serif;
+  color:#013B0E ;
 }
 
 html,
 :root {
   width: 100%;
   min-height: 100vh;
+}
+
+
+.imgProdutos {
+  width: 300px;
+  height: 300px;
 }
 
 button,
@@ -37,6 +44,7 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: #F5F6EE;
 }
 
 .content{

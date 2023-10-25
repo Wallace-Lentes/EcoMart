@@ -133,6 +133,18 @@ const Cadastro = () => {
             </p>
           </div>
 
+
+      <Button
+        width="100%"
+        variant='primary'
+        texto="Cadastrar"
+        onClick={handleCadastro}
+      />
+    </form> 
+  </div>
+  )
+}
+
           <div className="fimForm">
             <Button
               width="100%"
@@ -143,8 +155,8 @@ const Cadastro = () => {
           </div>
         </form>
       </StyleCadastro>
-      <Footer></Footer>
-    </>
+      <Footer></Footer>*/}
+    </div>
   );
 };
 
