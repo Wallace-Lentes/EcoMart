@@ -62,6 +62,13 @@ const Produtos = () => {
         valor={528.89}
         loja="Loja Parceira: Supermercado do Povo"
       />
+      <Card
+        id={6}
+        titulo="Kit Marmita Sustentável"
+        img="/marmita.jpg"
+        valor={47.90}
+        loja="Loja Parceira: Marmitando"
+      />
     </StyledProdutos>
     <Footer/>
     </>
