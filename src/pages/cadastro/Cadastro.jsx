@@ -126,7 +126,7 @@ const Cadastro = () => {
 
           <div className="fimForm">
             <p>
-              Já tem conta tem conta?
+              Já tem conta?
               <Link to="/login" className="destaque" onClick={handleClick}>
                 Faça login
               </Link>
