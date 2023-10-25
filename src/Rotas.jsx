@@ -8,6 +8,7 @@ import PaginaHome from './pages/PaginaHome/PaginaHome'
 import Produtos from '../src/pages/Produtos/Produtos'
 import Contato from '../src/pages/Contato/Contato'
 import Cadastro from '../src/pages/cadastro/Cadastro'
+import Dashboard from './pages/Dasboard/Dashboard'
 
 
 const Rotas = () => {
@@ -22,6 +23,7 @@ return (
         <Route path="/produtos" element={<Produtos/>} />
         <Route path="/contato" element={<Contato/>} />
         <Route path="/cadastro" element={<Cadastro/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
 
         </Routes>
     </BrowserRouter>
