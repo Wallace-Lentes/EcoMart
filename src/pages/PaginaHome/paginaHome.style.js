@@ -4,5 +4,9 @@ export const StylePaginaHome = styled.div`
 flex-grow: 1;
 background-color:#F5F6EE;
 gap: 5px;
-height:100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
 `
