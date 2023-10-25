@@ -7,8 +7,9 @@ import Login from '../src/pages/login/Login'
 import PaginaHome from './pages/PaginaHome/PaginaHome'
 import Produtos from '../src/pages/Produtos/Produtos'
 import Contato from '../src/pages/Contato/Contato'
-import Cadastro from '../src/pages/cadastro/Cadastro'
+import Cadastro from '../src/pages/Cadastro/Cadastro'
 import Dashboard from './pages/Dasboard/Dashboard'
+
 
 
 const Rotas = () => {

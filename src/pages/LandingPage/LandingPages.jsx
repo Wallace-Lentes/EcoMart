@@ -10,3 +10,4 @@ const LandingPages = () => {
 }
 
 export default LandingPages
+

@@ -4,8 +4,10 @@ export const StyleHeader = styled.header`
 height: 100%;
 color: blue;
 display: flex;
-background-color: #f2f2f2;
+background-color: #95d195;
 padding: 12px;
+
+
 
 .logo {
     width: 150px;
