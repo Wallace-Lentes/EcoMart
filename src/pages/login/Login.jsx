@@ -3,7 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { StyleLogin } from "../login/login.style";
 import Button from "../../components/common/Button/Button";
 import Textfield from "../../components/common/Textfield/Textfield";
-import login from "../../../src/assets/login.svg"
+import loginn from "/loginn.svg"
+import Header from "../../components/views/LandingPage/Header/Header"
+import Footer from "../../components/views/LandingPage/Footer/Footer"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -27,8 +29,10 @@ const Login = () => {
 
   return (
     <>
+    < Header />
       <StyleLogin>
         <section>
+          
           <div className="div-principal">
             <h1>Login</h1>
             <form>
@@ -36,12 +40,11 @@ const Login = () => {
                 label="Email:"
                 name="email"
                 type="email"
-                placeholder="email@email.com"
+                placeholder="josédacosta@email.com"
                 required
                 value={email}
                 onChange={(e) => setEmail(e)}
               />
-
               <Textfield
                 label="Senha:"
                 name="senha"
@@ -59,18 +62,18 @@ const Login = () => {
                 onClick={handleLogin}
               />
               <Link to="/cadastro" className="link-cadastro">
-                Não possui cadastro?
+                Ainda não se cadastrou? Cadastre-se aqui 
               </Link>
             </form>
-            <picture>
+          </div>
           <img
-            src={login}
+            src={loginn}
             alt="Imagem de um usuario remetendo a idéia de login"
           />
-          </picture>
-          </div>
-        </section>
+          </section>
+          
       </StyleLogin>
+      < Footer />
     </>
   );
 };
