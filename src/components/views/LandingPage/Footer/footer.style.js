@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyleFooter = styled.footer`
-background-color: #f2f2f2;
+background-color: #95d195;
 height: 20vh;
 color: blue;
 display: flex;

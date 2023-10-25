@@ -132,7 +132,7 @@ const Cadastro = () => {
         texto="Cadastrar"
         onClick={handleCadastro}
       />
-    </form> */}
+    </form> 
   </div>
   )
 }
@@ -147,8 +147,8 @@ const Cadastro = () => {
           </div>
         </form>
       </StyleCadastro>
-      <Footer></Footer>
-    </>
+      <Footer></Footer>*/}
+    </div>
   );
 };
 

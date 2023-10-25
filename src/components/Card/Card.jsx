@@ -41,5 +41,5 @@ const StyledCard = styled.div`
   padding: 40px;
   background: #95d195;
   border-radius: 16px;
-  box-shadow:  9px 6px  #364936;
+  box-shadow:  9px 6px  #013B0E;
 `
