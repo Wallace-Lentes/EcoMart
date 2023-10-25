@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import { TransacoesContext } from '../../../core/contexto/useTransacoes'
 // import Logo from '../../common/Logo/Logo'
 import { StylesLayout } from './Layout.Styles'
+import Footer from '../../views/LandingPage/Footer/Footer'
 
 const Layout = ({ children }) => {
 
@@ -13,24 +14,24 @@ const Layout = ({ children }) => {
         {/* <Logo /> */}
         <ul>
           <li>
-            <Link>Dashboard</Link>
+            <Link>EcoMart</Link>
           </li>
           <li>
-            <Link>Entradas</Link>
+            <Link>Produtos</Link>
           </li>
           <li>
-            <Link>Saidas</Link>
+            <Link>Contato</Link>
           </li>
         </ul>
       </aside>
       <div>
-        <header className='header-layout'>
-          <p>Olá!</p>
-          <Link >Sair</Link>
-        </header>
-        <main>
-          {children}
-        </main>
+
+        <p>Olá, seja bem vindo</p>
+        <section className='corpo-pagina'>
+            <h1>Você possui 2392 pontos</h1>
+            <p>Troque seus pontos por benefícios</p>
+        </section>
+        <Footer/>
       </div>
     </StylesLayout>
   )
