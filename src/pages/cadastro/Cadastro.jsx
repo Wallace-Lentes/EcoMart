@@ -18,7 +18,6 @@ const Cadastro = () => {
   const [numero, setNumero] = useState("");
   const [senha, setSenha] = useState("");
   const [confirmaSenha, setConfirmaSenha] = useState("");
-  
 
   const navigate = useNavigate();
 
@@ -35,14 +34,14 @@ const Cadastro = () => {
       rua,
       numero,
       senha,
-      confirmaSenha
+      confirmaSenha,
     };
 
     if (senha === confirmaSenha) {
       const resposta = await postUsuario(body, senha);
       console.log(resposta);
-      
-      navigate('/dashboard')
+
+      navigate("/dashboard");
     } else {
       console.log("as senhas precisam ser iguais");
     }
@@ -168,19 +167,19 @@ const Cadastro = () => {
             </p>
           </div>
 
-<div>
-      <Button
-        width="100%"
-        variant='primary'
-        texto="Cadastrar"
-        onClick={handleCadastro}
-      />
-    </div>
-    </form> 
-  </StyleCadastro>
-  < Footer />
-  </>
-  )
-}
+          <div className="fimForm">
+            <Button
+              width="100%"
+              variant="secondary"
+              texto="Cadastrar"
+              onClick={handleCadastro}
+            />
+          </div>
+        </form>
+      </StyleCadastro>
+      <Footer />
+    </>
+  );
+};
 
 export default Cadastro;
