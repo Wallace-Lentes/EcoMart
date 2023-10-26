@@ -33,13 +33,15 @@ const Cadastro = () => {
       cep,
       rua,
       numero,
+      senha,
+      confirmaSenha,
     };
 
     if (senha === confirmaSenha) {
       const resposta = await postUsuario(body, senha);
-      localStorage.setItem("id", resposta.data.id);
-      localStorage.setItem("nome", resposta.data.nome);
       console.log(resposta);
+
+      navigate("/dashboard");
     } else {
       console.log("as senhas precisam ser iguais");
     }
@@ -165,25 +167,7 @@ const Cadastro = () => {
             </p>
           </div>
 
-<div>
-      <Button
-        width="100%"
-        variant='primary'
-        texto="Cadastrar"
-        onClick={handleCadastro}
-      />
-    </div>
-    </form> 
-  </StyleCadastro>
-  < Footer />
-  </>
-  )
-}
-
-
-
-
-          {/* <div className="fimForm">
+          <div className="fimForm">
             <Button
               width="100%"
               variant="secondary"
@@ -193,10 +177,9 @@ const Cadastro = () => {
           </div>
         </form>
       </StyleCadastro>
-
-      <Footer></Footer>*/}
-    {/* </div>
-
-      <Footer></Footer>*/}
+      <Footer />
+    </>
+  );
+};
 
 export default Cadastro;
