@@ -3,14 +3,9 @@ import Header from "../../components/views/LandingPage/Header/Header";
 import Footer from "../../components/views/LandingPage/Footer/Footer";
 // import Input from "../../components/common/Input";
 // import Textfield from "../../components/common/Textfield";
-//import Button from "../../components/common/Button";
-import {StyleContato} from "../Contato/Contato.style"
-import {
-    Envelope,
-    PhoneCall,
-    InstagramLogo,
-    FacebookLogo,
-} from "@phosphor-icons/react";
+import Button from "../../components/common/Button";
+import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
+
 
 const Contato = () => {
     return (
