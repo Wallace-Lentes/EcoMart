@@ -68,6 +68,9 @@ const Contato = () => {
                 <input type="email" name="email" placeholder="Seu email" required/>
                 <input type="tel" name="celular" placeholder="Seu celular" required/>
                 <textarea className="caixatexto"  name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <input type="button" className="buttonenviar">
+      Enviar
+    </input>
         </form> 
     </section>
 </StyleContato>
