@@ -165,7 +165,24 @@ const Cadastro = () => {
             </p>
           </div>
 
-          <div className="fimForm">
+<div>
+      <Button
+        width="100%"
+        variant='primary'
+        texto="Cadastrar"
+        onClick={handleCadastro}
+      />
+    </div>
+    </form> 
+  </StyleCadastro>
+  </>
+  )
+}
+
+
+
+
+          {/* <div className="fimForm">
             <Button
               width="100%"
               variant="secondary"
@@ -175,9 +192,10 @@ const Cadastro = () => {
           </div>
         </form>
       </StyleCadastro>
-      <Footer></Footer>
-    </>
-  );
-};
+
+      <Footer></Footer>*/}
+    {/* </div>
+
+      <Footer></Footer>*/}
 
 export default Cadastro;
