@@ -4,8 +4,9 @@ import Footer from "../../components/views/LandingPage/Footer/Footer";
 // import Input from "../../components/common/Input";
 // import Textfield from "../../components/common/Textfield";
 import Button from "../../components/common/Button";
-import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
-
+import { Envelope, FacebookLogo, InstagramLogo, PhoneCall } from "@phosphor-icons/react";
+import { StyleContato } from "./Contato.style";
+import Button from "../../components/common/Button/Button";
 
 const Contato = () => {
     return (
@@ -63,9 +64,13 @@ const Contato = () => {
                 <input type="email" name="email" placeholder="Seu email" required/>
                 <input type="tel" name="celular" placeholder="Seu celular" required/>
                 <textarea className="caixatexto"  name="mensagem" placeholder="Sua mensagem" required></textarea>
-                <input type="button" className="buttonenviar">
-      Enviar
-    </input>
+            
+                <Button
+              width="100%"
+              variant="secondary"
+              texto="Enviar"
+            //   onClick={handleCadastro}
+            />
         </form> 
     </section>
 </StyleContato>
