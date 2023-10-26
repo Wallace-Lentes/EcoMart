@@ -14,6 +14,7 @@ export const StyleCadastro = styled.main`
     gap: 20px;
 
     >h2, .fimForm{
+        color: #0a6b10;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -24,8 +25,6 @@ export const StyleCadastro = styled.main`
 .formulario{
     display: flex;
     gap: 40px;
-
-   
 }
 `;
 

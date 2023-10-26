@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyleLogin = styled.main` 
+background-color: #F5F6EE;
 
     section, .div-principal, form {
         display: flex;
@@ -11,6 +12,7 @@ export const StyleLogin = styled.main`
         font-weight: 500;
         text-decoration: none;
         font-size: 1.7rem;
+        color:#0a6b10;
     }
 
     .div-principal, form {

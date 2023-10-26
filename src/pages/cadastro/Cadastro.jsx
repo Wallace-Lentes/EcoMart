@@ -168,21 +168,19 @@ const Cadastro = () => {
             </p>
           </div>
 
-          <div className="fimForm">
-            <Button
-              width="100%"
-              variant="secondary"
-              texto="Cadastrar"
-              onClick={handleCadastro}
-            />
-          </div>
-        </form>
-      </StyleCadastro>
-      
-      <Footer></Footer>
-
-    </>
-  );
-};
+<div>
+      <Button
+        width="100%"
+        variant='primary'
+        texto="Cadastrar"
+        onClick={handleCadastro}
+      />
+    </div>
+    </form> 
+  </StyleCadastro>
+  < Footer />
+  </>
+  )
+}
 
 export default Cadastro;

@@ -12,6 +12,7 @@ justify-content: space-around;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+    color: #0a6b10;
 }
 
 .planeta {
