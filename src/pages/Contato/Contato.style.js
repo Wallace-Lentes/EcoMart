@@ -29,6 +29,7 @@ h3 {
     padding-left: 11%;
 }
 p{
+    color: #0a6b10;
     text-align: center;
     padding-bottom: 3%;
     padding-top: 3%;
@@ -45,5 +46,6 @@ input {
 .caixatexto{
     width: 500px;
     height: 100px;
+    padding-bottom: 5%;
 }
 `
