@@ -3,8 +3,8 @@ import Header from "../../components/views/LandingPage/Header/Header";
 import Footer from "../../components/views/LandingPage/Footer/Footer";
 // import Input from "../../components/common/Input";
 // import Textfield from "../../components/common/Textfield";
-import Button from "../../components/common/Button";
 import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
+import Button from "../../components/common/Button/Button";
 
 
 const Contato = () => {
