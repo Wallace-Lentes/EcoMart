@@ -175,6 +175,7 @@ const Cadastro = () => {
     </div>
     </form> 
   </StyleCadastro>
+  < Footer />
   </>
   )
 }

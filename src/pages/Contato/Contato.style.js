@@ -1,5 +1,6 @@
 import styled from "styled-components"
 export const StyleContato = styled.main`
+background-color: #F5F6EE;
 
 h2{
     color: #0a6b10;
@@ -36,6 +37,7 @@ p{
 }
 .formulario{
     padding-left:34%;
+    display: block;
 }
 input {
     display: block;
@@ -47,5 +49,10 @@ input {
     width: 500px;
     height: 100px;
     padding-bottom: 5%;
+}
+.botao {
+    padding-right: 12%;
+    margin-top: 3%;
+    padding-left: 20%;
 }
 `

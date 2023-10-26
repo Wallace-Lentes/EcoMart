@@ -32,7 +32,6 @@ const QuemSomos = () => {
             </p> 
             <img className='foto'src={reciclagem} alt="" />
       </div>
-      
         </StyleQuemSomos>
       <Footer></Footer>
     </>
