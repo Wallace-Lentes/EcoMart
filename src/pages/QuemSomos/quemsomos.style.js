@@ -1,5 +1,5 @@
 import styled from "styled-components"
-export const StyleQuemSomos = styled.main`
+export const StyleQuemSomos = styled.body`
 background-color: #F5F6EE;
 
 h2{
