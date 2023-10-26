@@ -18,6 +18,7 @@ const Cadastro = () => {
   const [numero, setNumero] = useState("");
   const [senha, setSenha] = useState("");
   const [confirmaSenha, setConfirmaSenha] = useState("");
+  
 
   const navigate = useNavigate();
 
@@ -33,13 +34,15 @@ const Cadastro = () => {
       cep,
       rua,
       numero,
+      senha,
+      confirmaSenha
     };
 
     if (senha === confirmaSenha) {
       const resposta = await postUsuario(body, senha);
-      localStorage.setItem("id", resposta.data.id);
-      localStorage.setItem("nome", resposta.data.nome);
       console.log(resposta);
+      
+      navigate('/dashboard')
     } else {
       console.log("as senhas precisam ser iguais");
     }
@@ -175,7 +178,9 @@ const Cadastro = () => {
           </div>
         </form>
       </StyleCadastro>
+      
       <Footer></Footer>
+
     </>
   );
 };
