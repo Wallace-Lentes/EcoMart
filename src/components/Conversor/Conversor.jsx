@@ -1,51 +1,96 @@
+import React, { useState } from "react";
+import { ConversorStyle } from "./conversor.style";
+import Button from "../common/Button/Button";
 
+const Conversor = () => {
+  const conversor = (material, qtdKg) => {
+    if (material === "papel" || material === "plastico") {
+      return qtdKg * 5;
+    }
 
-import React, { useState } from 'react';
+    if (material === "aluminio") {
+      return qtdKg * 12.5;
+    }
 
-const Conversor = () =>{
-//   papel: {
-//     valorDinheiro: 0.5,
-//     valorPontos: 5,
-//   },
-//   aluminio: {
-//     valorDinheiro: 1.25,
-//     valorPontos: 12.5,
-//   },
-//   plastico: {
-//     valorDinheiro: 0.5,
-//     valorPontos: 5,
-//   },
-//   vidro: {
-//     valorDinheiro: 0.2,
-//     valorPontos: 2,
-//   },
-//   pilha: {
-//     valorDinheiro: 0.3,
-//     valorPontos: 3,
-//   },
-// };
+    if (material === "vidro") {
+      return qtdKg * 2;
+    }
 
+    if (material === "pilha") {
+      return qtdKg * 3;
+    }
+  };
 
-//   const [materialSelecionado, setMaterialSelecionado] = useState('papel');
-//   const [quantidadeKg, setQuantidadeKg] = useState(0);
-//   const [valorDinheiro, setValorDinheiro] = useState(0);
-//   const [valorPontos, setValorPontos] = useState(0);
-
-
-//     const materialInserido = reciclagem[materialSelecionado];
-//     const valorDinheiroCalculado = quantidadeKg * materialInserido.valorDinheiro;
-//     const valorPontosCalculado = quantidadeKg * materialInserido.valorPontos;
-
-//     setValorDinheiro(valorDinheiroCalculado);
-//     setValorPontos(valorPontosCalculado);
-  
-
+  const [materialSelecionado, setMaterialSelecionado] = useState("");
+  const [quantidadeKg, setQuantidadeKg] = useState("");
+  const [valorPontos, setValorPontos] = useState("");
+  const [error, setError] = useState(false);
 
   return (
-    <div>
-      
-    </div>
-  )
-  };
+    <ConversorStyle>
+      <div className="material">
+        <label htmlFor="">SELECIONE UM MATERIAL</label>
+        <select
+          name=""
+          id=""
+          onChange={(e) => setMaterialSelecionado(e.target.value)}
+        >
+          <option value="">Selecione um material</option>
+          <option>papel</option>
+          <option>aluminio</option>
+          <option>plastico</option>
+          <option>vidro</option>
+          <option>pilha</option>
+        </select>
+      </div>
+
+      <div className="valor">
+        <label htmlFor="">INSIRA A QUANTIDADE DE MATERAL EM KGS</label>
+        <input type="text" onChange={(e) => setQuantidadeKg(e.target.value)} />
+      </div>
+
+      <Button
+        texto={"Converter"}
+        variant={"primary"}
+        width={'320pxo'}
+        onClick={() => {
+          if (materialSelecionado === "") {
+            setError(true);
+
+            setTimeout(() => {
+              setError(false);
+            }, 3000);
+          } else if (quantidadeKg === "") {
+            setError(true);
+
+            setTimeout(() => {
+              setError(false);
+            }, 3000);
+          } else {
+            setValorPontos(conversor(materialSelecionado, quantidadeKg));
+            setTimeout(() => {
+              setValorPontos('')
+            }, 5000)
+          }
+        }}
+      />
+
+      <div className="pontos">
+        {valorPontos && (
+          <>
+            <p>
+              O resultado do material {materialSelecionado} é {valorPontos}{" "}
+              pontos
+            </p>
+          </>
+        )}
+
+        { 
+          error && <p>Você precisa preencher todas opções</p>
+        }
+      </div>
+    </ConversorStyle>
+  );
+};
 
 export default Conversor;
