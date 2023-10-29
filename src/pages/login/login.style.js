@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const StyleLogin = styled.main` 
+background-color: #F5F6EE;
 
     section, .div-principal, form {
         display: flex;
     }
 
     h1 {
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Bree Serif', serif;
         font-weight: 500;
         text-decoration: none;
         font-size: 1.7rem;
+        color:#0a6b10;
     }
 
     .div-principal, form {
@@ -48,7 +50,7 @@ export const StyleLogin = styled.main`
 
     .link-cadastro {
         font-size: 15px;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Bree Serif', serif;
         color: #263238;
     }
 img{

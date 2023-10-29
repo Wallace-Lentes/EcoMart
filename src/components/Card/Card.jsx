@@ -19,6 +19,8 @@ const Card = ({id, titulo, img, valor, loja, descricao}) => {
       <p> {loja}</p>
       <p>Valor em pontos: {valor} </p>
       <p>Valor em dinheiro: R${valor*2} </p>
+      <p>Valor em pontos: {valor}</p>
+
       <Button texto='Adquirir produto' variant='primary' onClick={handleClick} />
       {notificacaoAberta && <Notificacao taAberto={notificacaoAberta} fecharNotificacao={()=>setNotificacaoAberta(false)}/>}
     </StyledCard>

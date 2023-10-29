@@ -25,7 +25,8 @@ align-items: center;
 
 }
 
-.Link{
+.Link {
+    font-family: 'Bree Serif', serif;
 color: black;
 font-size: 22px;
 }

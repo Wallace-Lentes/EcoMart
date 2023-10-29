@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const StylesLayout = styled.div`
+export const StylesLayout = styled.body`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -9,9 +9,9 @@ export const StylesLayout = styled.div`
     width: 264px;
     height: 100%;
     padding: 24px 10px;
-    background-color: #067BC2;
+    background-color: #95d195;
     display: flex;
-    align-items: flex-start;
+    text-align: center;
     flex-direction: column;
     gap: 24px;
 
@@ -19,35 +19,67 @@ export const StylesLayout = styled.div`
       display: flex;
       gap: 34px;
       flex-direction: column;
+      padding-top: 15%;
 
       > li {
-        color: #F5F6EE;
+        color: #0a6b10;
+
+        > h3 {
+          text-align: center;
+        }
       }
     }
   }
 
+  .logo {
+    width: 190px;
+    object-fit: contain;
+  }
   div {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #f5f6ee;
   }
-  .header-layout {
-    border: solid red;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F5F6EE ;
-    padding: 24px;
-    /* color: #95d195 ; */
+  .titulo {
+    color: #0a6b10;
+    font-size: 40px;
+    text-align: center;
+    margin: 2%;
+  }
+  h1 {
+    font-family: "Bree Serif", serif;
+    color: #0a6b10;
+    text-align: center;
+    font-size: 33px;
+    padding-bottom: 3%;
+  }
 
-    > p {
-      color: #067BC2;
-    }
+  h2 {
+    color: #0a6b10;
+    font-size: 28px;
+    text-align: justify;
+    padding-left: 5%;
   }
-.corpo-pagina {
-    border: solid yellow;
-    height: 100%;
-    background-color: #F5F6EE;    
-}
-`
+  .conversor {
+    padding-left: 2%;
+  }
+  p {
+    color: #0a6b10;
+    font-size: 23px;
+    text-align: justify;
+    padding-left: 5%;
+  }
+  .coleta {
+    display: flex;
+    flex-direction: row;
+  }
+  .sp,
+  .rj,
+  .sc,
+  .rs {
+    display: flex;
+    padding-left: 6%;
+    padding-top: 7%;
+  }
+`;

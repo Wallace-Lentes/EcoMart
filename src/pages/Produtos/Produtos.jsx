@@ -21,7 +21,7 @@ const Produtos = () => {
       />
       <Card
         id={2}
-        titulo="Escovas de bambu"
+        titulo="Escova dental de bambu"
         img ="/escovas.jpeg"
         valor={9.80}
         loja="Loja Parceira: Bambu Global"

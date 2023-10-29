@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyleFooter = styled.footer`
-background-color: #95d195;
+background-color: #63bb63;
 height: 20vh;
 display: flex;
-/* margin-top: 50px; */
+/* margin-top: 50px; */ 
 
 .rodape {
     display: flex;
@@ -18,7 +18,7 @@ display: flex;
     align-items: center;
 }
 .nomerua {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Bree Serif', serif;
     font-size: 18px;
 }
 .map {
@@ -33,7 +33,7 @@ display: flex;
 .contato p {
     margin: auto;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Bree Serif', serif;
 }
 
 .icones svg {
