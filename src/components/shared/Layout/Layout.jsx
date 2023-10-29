@@ -1,20 +1,17 @@
 import { Link } from 'react-router-dom'
-// import { TransacoesContext } from '../../../core/contexto/useTransacoes'
-// import Logo from '../../common/Logo/Logo'
-import {Recycle} from "@phosphor-icons/react";
+import {Recycle,
+        SignOut} from "@phosphor-icons/react";
 import { StylesLayout } from '../Layout/Layout.Styles'
-//   const { nome } = useContext(TransacoesContext)
-
+import Conversor from '../../Conversor/Conversor';
+import logo from "/ecomartmenor.png"
 
 const Layout = () => {
   return (
     <StylesLayout>
       <img src="" alt="" />
       <nav className='barra-lateral'>
+      <img className='logo'src={logo} alt="Logo da Empresa EcoMart com uma folha verde em cima da letra 'o'" aria-label='Logomarca'/>
         <ul>
-          <li>
-            <h2>EcoMart</h2>
-          </li>
           <li>
             <Link to='/Produtos'>Produtos</Link>
           </li>
@@ -22,11 +19,23 @@ const Layout = () => {
             <Link to='/Contato'>Contato</Link>
           </li>
         </ul>
+        <section className='sair'>
+            <a
+            href= '/Login'
+            target="_blank"
+            rel="noopener noreferrer">
+            <SignOut color={'#013B0E'} size={32} />
+        </a>
+        <h3> Sair</h3>
+        </section>
       </nav>
       <div>
         <h1 className='titulo'>Olá, seja bem vindo</h1>
             <h2>Atualmente você não possui pontos</h2>
             <p>Faça sua primeira troca, acumule pontos e troque por beneficios</p>
+            <div className="conversor">
+            < Conversor />
+            </div>
         <div className='coleta'>
         <section className="sp">
             <a
