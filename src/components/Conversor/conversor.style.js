@@ -11,6 +11,12 @@ export const ConversorStyle = styled.div`
     justify-content: center;
     align-items: center;
 
+    h3 {
+    color: #0a6b10;
+    font-size: 20px;
+    text-align: justify;
+    }
+    
     select {
         width: 200px;
         height: 24px;
