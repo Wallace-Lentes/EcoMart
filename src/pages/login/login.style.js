@@ -8,7 +8,7 @@ background-color: #F5F6EE;
     }
 
     h1 {
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Bree Serif', serif;
         font-weight: 500;
         text-decoration: none;
         font-size: 1.7rem;
@@ -50,7 +50,7 @@ background-color: #F5F6EE;
 
     .link-cadastro {
         font-size: 15px;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Bree Serif', serif;
         color: #263238;
     }
 img{
