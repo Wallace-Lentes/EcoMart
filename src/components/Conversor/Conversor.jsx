@@ -28,14 +28,15 @@ const Conversor = () => {
 
   return (
     <ConversorStyle>
+      <h3> Simule abaixo a quantidade equivalente para cada material</h3>
       <div className="material">
-        <label htmlFor="">SELECIONE UM MATERIAL</label>
+        <label htmlFor="">Selecione um material:</label>
         <select
           name=""
           id=""
           onChange={(e) => setMaterialSelecionado(e.target.value)}
         >
-          <option value="">Selecione um material</option>
+          <option value="">Selecione</option>
           <option>papel</option>
           <option>aluminio</option>
           <option>plastico</option>
@@ -45,7 +46,7 @@ const Conversor = () => {
       </div>
 
       <div className="valor">
-        <label htmlFor="">INSIRA A QUANTIDADE DE MATERAL EM KGS</label>
+        <label htmlFor="">Quantidade em kg:</label>
         <input type="text" onChange={(e) => setQuantidadeKg(e.target.value)} />
       </div>
 
