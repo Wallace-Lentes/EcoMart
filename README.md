@@ -26,13 +26,11 @@ npm install
 7. As dependências do projeto serão instaladas em sua máquina. Aguarde a finalização da instalação e, no terminal, digite:
 npm run dev
 
-8. O projeto será aberto em seu navegador.
+8. O projeto será aberto em seu navegador. 
 
-## Links externos
-
-* Repositório da API da EcoMart: https://github.com/Wallace-Lentes/API_mod4
-* 
-
+Links externos
+• Repositório da API da EcoMart: https://github.com/Wallace-Lentes/API_mod4
+• Apresentação de slides do projeto: https://www.canva.com/design/DAFu6j_fZOM/QUNjAIU9GgQZuslKnYUNEw/edit?utm_content=DAFu6j_fZOM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 ## Colaboradores
 
 * Ana Caroline Henrique de Oliveira
