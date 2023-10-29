@@ -1,5 +1,5 @@
 import React from 'react'
-import planeta from "../../../../assets/fotoplaneta.jpg"
+import planeta from "/img_home.png"
 import { StyleContainer } from "../BannerMundo/BannerMundo.style"
 
 const BannerMundo = () => {
