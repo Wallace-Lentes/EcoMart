@@ -81,7 +81,7 @@ const Conversor = () => {
           <>
             <p>
               O resultado do material {materialSelecionado} é {valorPontos}{" "}
-              pontos
+              pontos e em dinheiro é R${valorPontos/2}{" "}
             </p>
           </>
         )}
