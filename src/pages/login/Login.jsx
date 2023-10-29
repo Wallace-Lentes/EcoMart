@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { StyleLogin } from "../login/login.style";
 import Button from "../../components/common/Button/Button";
 import Textfield from "../../components/common/Textfield/Textfield";
-import logiin from '../../../public/logiin.svg'
+import logiin from '/logiin.svg'
 import Header from "../../components/views/LandingPage/Header/Header"
 import Footer from "../../components/views/LandingPage/Footer/Footer"
 
