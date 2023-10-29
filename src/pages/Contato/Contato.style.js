@@ -3,6 +3,7 @@ export const StyleContato = styled.main`
 background-color: #F5F6EE;
 
 h2{
+    font-family: 'Bree Serif', serif;
     color: #0a6b10;
     font-size: 35px;
     text-align: center;
@@ -15,6 +16,7 @@ h2{
     padding-right: 10%;
 }
 h3 {
+    font-family: 'Bree Serif', serif;
     font-size: 25px;
     color: #0a6b10;
     text-align: center;
@@ -30,6 +32,7 @@ h3 {
     padding-left: 11%;
 }
 p{
+    font-family: 'Bree Serif', serif;
     color: #0a6b10;
     text-align: center;
     padding-bottom: 3%;
@@ -54,5 +57,6 @@ input {
     padding-right: 12%;
     margin-top: 3%;
     padding-left: 20%;
+    padding-bottom: 3%;
 }
 `
